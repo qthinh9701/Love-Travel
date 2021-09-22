@@ -16,7 +16,6 @@ function countdown(date) {
   minutes = parseInt(timeRemaining / 60);
   timeRemaining = timeRemaining % 60;
   seconds = parseInt(timeRemaining);
-  console.log(seconds);
   daysText.textContent = `0${days}`.slice(-2);
   hoursText.textContent =`0${hours}`.slice(-2);
   minutesText.textContent = `0${minutes}`.slice(-2);
