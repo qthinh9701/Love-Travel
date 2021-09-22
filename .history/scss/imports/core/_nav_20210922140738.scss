@@ -1,0 +1,32 @@
+// css navigator (Menu)
+.nav-mobile {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  max-width:100%
+  @include xxs {
+    display: block;
+    position: relative;
+    
+    &__heading {
+      &-lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .list {
+        .logo-img {
+          width: 150px;
+        }
+        ion-icon {
+          color: $white-cl;
+        }
+      }
+    }
+    &__bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+  }
+}

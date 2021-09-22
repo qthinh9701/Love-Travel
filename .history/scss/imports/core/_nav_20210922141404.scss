@@ -1,0 +1,37 @@
+// css navigator (Menu)
+.nav-mobile {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  @include xxs {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    padding: 15px;
+
+    &__heading {
+      &-lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .list {
+        .logo-img {
+          width: 150px;
+        }
+        ion-icon {
+          color: $white-cl;
+        }
+      }
+    }
+    &__bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $black-cl;
+      height: 100vh;
+      &-lists {
+          
+      }
+    }
+  }
+}

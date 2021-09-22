@@ -1,0 +1,12 @@
+// css button, title, icon, elements...
+img {
+  max-width: 100%;
+}
+@keyframes imgScale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}

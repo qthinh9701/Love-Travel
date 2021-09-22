@@ -1,0 +1,20 @@
+// css navigator (Menu)
+.nav-mobile {
+    @include {
+        
+    }
+  background: #34495e;
+  &__heading {
+    &-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    .list {
+        .logo-img {
+
+        }
+    }
+  }
+}

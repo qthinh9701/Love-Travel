@@ -1,0 +1,499 @@
+main {
+  &.mainwrapper {
+    .our-dest {
+      margin-bottom: 76px;
+      .top-title,
+      .main-title {
+        width: fit-content;
+        text-transform: uppercase;
+      }
+      .top-title {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        font-weight: normal;
+        color: $text-gray-cl;
+        margin: 60px auto 30px;
+      }
+      .main-title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: 0px;
+        font-weight: bold;
+        margin: 0 auto 54px;
+        span {
+          &::after {
+            background: $green-cl;
+          }
+        }
+      }
+      .our-dest__options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 370px 370px;
+        grid-gap: 30px;
+        @include xxs {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 370px);
+        }
+        .item {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .next-holiday {
+      background-image: url(../../../img/parallax-search-2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      .container {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        @include xxs {
+          flex-direction: column;
+          .next-holiday__text {
+            text-align: center;
+            margin-right: unset !important;
+            margin-bottom: 10px;
+          }
+        }
+        .next-holiday__text {
+          font-size: 45px;
+          line-height: 45px;
+          letter-spacing: 0px;
+          font-weight: bold;
+          color: $white-cl;
+          text-transform: capitalize;
+          margin-right: 94px;
+        }
+        .next-holiday__btn {
+          color: $red-cl;
+        }
+      }
+    }
+    .best-beaches {
+      .container {
+        .best-beaches__heading {
+          display: grid;
+          grid-template-columns: 333px 1fr;
+          grid-template-rows: 420px;
+          grid-gap: 0 84px;
+          margin-bottom: 116px;
+          @include xxs {
+            display
+          }
+          .text-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .small-title {
+              text-transform: uppercase;
+            }
+            .main-title {
+              text-transform: capitalize;
+              position: relative;
+              &.span-underline {
+                span {
+                  &::after {
+                    background: $blue-cl;
+                  }
+                }
+              }
+            }
+            .des {
+            }
+            .bottom {
+              h1 {
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 36px;
+                span {
+                  &:first-child {
+                    color: #dadada;
+                    text-decoration: line-through;
+                    margin-right: 10px;
+                  }
+                  &:last-child {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+              .book-now {
+                background: $green-cl;
+                font-size: 14px;
+                color: $white-cl;
+                line-height: 14px;
+                letter-spacing: 2px;
+              }
+            }
+          }
+          .right {
+            position: relative;
+            .images-box {
+              width: 100%;
+              height: 100%;
+              .flickity-viewport {
+                cursor: none;
+              }
+              .flickity-page-dots {
+                top: 10px;
+                height: 20px;
+                .dot {
+                  cursor: none;
+                  height: 3px;
+                  background: $white-cl;
+                  width: 44px;
+                  margin: 0 10px;
+                  border-radius: 0;
+                }
+              }
+              .image {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+            .timing {
+              --heightTiming: 114px;
+              background: $blue-cl;
+              display: flex;
+              width: 488px;
+              height: var(--heightTiming);
+              justify-content: space-between;
+              padding: 30px;
+              align-items: center;
+              position: absolute;
+              left: 50%;
+              bottom: calc((var(--heightTiming) / 2) * (-1));
+              transform: translateX(-50%);
+              .time {
+                text-transform: uppercase;
+                text-align: center;
+                color: $white-cl;
+                font-size: 35px;
+                line-height: 20px;
+                position: relative;
+                letter-spacing: 2px;
+                &:not(:last-child) {
+                  &::after {
+                    content: "/";
+                    height: 40px;
+                    color: $gray-cl;
+                    position: absolute;
+                    top: 50%;
+                    right: -20px;
+                    transform: translateY(-50%);
+                    width: 3px;
+                  }
+                }
+                span {
+                  font-size: 13px;
+                  line-height: 13px;
+                }
+              }
+            }
+          }
+        }
+        .best-beaches__bottom {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 0 45px;
+          .item {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-gap: 0 20px;
+            .icon-img {
+              width: 50px;
+              height: 50px;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              }
+            }
+            .text {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .front-title {
+                font-size: 24px;
+                color: $text-black-cl;
+                font-weight: bold;
+                letter-spacing: 2px;
+                line-height: 24px;
+              }
+              .des {
+                margin: 20px 0;
+              }
+              .more-btn {
+                text-transform: capitalize;
+                color: $blue-cl;
+                letter-spacing: 2px;
+                text-decoration: none;
+                width: fit-content;
+                padding: 4px 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .discover {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .discover__item {
+        position: relative;
+        text-align: center;
+        padding: 64px 0;
+        .first-title {
+          font-size: 14px;
+          color: $white-cl;
+          font-weight: normal;
+          line-height: 14px;
+        }
+        .main-title {
+          color: $white-cl;
+          margin: 38px 0;
+        }
+
+        &.cities {
+          width: 100%;
+          background-image: url(../../../img/cities-img.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          .detail-btn {
+            color: $red-cl;
+          }
+        }
+        &.nature {
+          background-image: url(../../../img/nature-img.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          .detail-btn {
+            color: $green-cl;
+          }
+        }
+      }
+    }
+    .our-packages {
+      .container {
+        .small-title {
+          width: fit-content;
+          margin: 0 auto;
+        }
+        .main-title {
+          margin: 24px auto 54px;
+          text-transform: uppercase;
+        }
+        .our-packages__lists {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 0 30px;
+          .item {
+            &:first-child {
+              .text-box {
+                .main-btn {
+                  background: $yellow-cl;
+                }
+              }
+            }
+            &:nth-child(2) {
+              .text-box {
+                .main-btn {
+                  background: $red-cl;
+                }
+                .category {
+                  .text {
+                    span {
+                      background: $red-cl;
+                    }
+                  }
+                  .price {
+                    span {
+                      color: $text-gray-cl;
+                      font-size: 20px;
+                      text-decoration: line-through;
+                    }
+                  }
+                }
+              }
+              .thumb {
+                .thumb-logo {
+                  background: linear-gradient(
+                    to right,
+                    #f76570 0%,
+                    #f78d65 100%
+                  );
+                }
+              }
+            }
+            &:last-child {
+              .text-box {
+                .main-btn {
+                  background: $violet-cl;
+                }
+                .category {
+                  .text {
+                    span {
+                      background: $violet-cl;
+                    }
+                  }
+                }
+              }
+              .thumb {
+                .thumb-logo {
+                  background: linear-gradient(
+                    to right,
+                    #ba71da 0%,
+                    #da717b 100%
+                  );
+                }
+              }
+            }
+            .thumb {
+              position: relative;
+              width: 100%;
+              padding-bottom: 62.5%;
+              .thumb-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+              }
+              .thumb-logo {
+                position: absolute;
+                bottom: -25px;
+                right: 22px;
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+                img {
+                  width: 50%;
+                  height: 50%;
+                  display: block;
+                }
+              }
+            }
+            .text-box {
+              border: 1px solid $gray-cl;
+              a {
+                text-decoration: none;
+              }
+              padding: 30px;
+              .place {
+                .city {
+                  font-size: 20px;
+                  line-height: 20px;
+                  font-weight: bold;
+                  color: $text-black-cl;
+                }
+                .location {
+                  font-size: 15px;
+                  line-height: 15px;
+                  letter-spacing: 2px;
+                  color: $text-gray-cl;
+                  padding: 12px 0 20px;
+                }
+              }
+              .category {
+                border-top: 1px solid $gray-cl;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px 0;
+                border-bottom: 1px solid $gray-cl;
+                .text {
+                  color: #555;
+                  letter-spacing: 2px;
+                  font-size: 15px;
+                  line-height: 15px;
+                  text-transform: uppercase;
+                  width: fit-content;
+                  h5 {
+                    margin: 5px 0;
+                  }
+                  span {
+                    color: $white-cl;
+                    background: $yellow-cl;
+                    padding: 1px 14px;
+                    border-radius: 38px;
+                    font-size: 10px;
+                    position: relative;
+                    &:hover {
+                      .sub {
+                        opacity: 1;
+                        pointer-events: visible;
+                        @include transition($t);
+                      }
+                    }
+                    .sub {
+                      @include transition($t);
+                      opacity: 0;
+                      pointer-events: none;
+                      position: absolute;
+                      bottom: -50px;
+                      display: flex;
+                      align-items: center;
+                      left: 0;
+                      width: 60px;
+                      height: 40px;
+                      background: #555;
+                      color: $white-cl;
+                      border-radius: 0;
+                      text-transform: capitalize;
+                      &::after {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 5px solid #555;
+                        border-left: 5px solid transparent;
+                        position: absolute;
+                        top: -10px;
+                        left: 10px;
+                      }
+                    }
+                  }
+                }
+                .price {
+                  font-size: 25px;
+                  line-height: 25px;
+                  color: #161817;
+                }
+              }
+              .des {
+                padding: 30px 0;
+              }
+              .main-btn {
+                color: $white-cl;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
